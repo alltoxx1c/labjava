@@ -69,8 +69,8 @@ public class lab72 {
         System.out.println("\n=== Сортировка по возрасту ===");
         userStorage.sort(Comparator.comparingInt(u -> u.age)).forEach(System.out::println);
 
-        System.out.println("\n=== Поиск Charlie ===");
-        userStorage.find(u -> u.name.equals("Charlie"))
+        System.out.println("\n=== Поиск Женя ===");
+        userStorage.find(u -> u.name.equals("Женя"))
                 .ifPresent(System.out::println);
 
 
@@ -91,4 +91,5 @@ public class lab72 {
         productStorage.getAll().forEach(System.out::println);
     }
 }
+
 
